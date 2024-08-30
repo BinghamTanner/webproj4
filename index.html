@@ -1,0 +1,322 @@
+<!-- --SELF GRADE--
+
+REFACTOR CSS-FIX       A  (I changed the footer to say my nam instead of "this is my footer". 
+                            I also fixed the size of the pictures on my pricing page. 
+                            I also added prices so it wouldnt be so confusing. )
+
+CSS THEME              A 
+
+CSS THEME TOGGLE     A -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZettySki</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css/styles.css" id="my-theme">
+    <link rel="stylesheet"  type="text/css" href="stylesv3.css">
+    <script src="https://kit.fontawesome.com/995d9424a9.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+
+
+</head>
+    <body>
+        
+        <div class="content">
+            <header class="content-header">
+                
+                <img src="zettyskilogowhite.png" alt="zettyski logo">
+                
+                <input type="checkbox" id="dark-switch" onclick="changeTheme()">
+                <label for="dark-switch"></label>
+            </header>
+            
+            <div class="content-menu"> 
+                <nav>     
+                    <button class='selected' onclick="revealSection('homeSection')" name="home"><span>HOME</span></button>
+                    <button onclick="revealSection('contactSection')" name="contact"><span>CONTACT US</span> </button>
+                    <button onclick="revealSection('aboutSection')" name="about"><span>ABOUT US</span></button>    
+                    <button onclick="revealSection('pricingSection')" name="pricing"><span>PRICING</span></button> 
+                </nav>
+            </div>    
+            
+            
+            
+
+            
+            <main class="content-main">
+
+
+                <!-- Home -->
+                <section id="homeSection" class="show">
+                    
+                    <div class="welcome">
+                        <h2>Welcome to ZettySki</h2> 
+
+                            <p>Welcome to ZettySki - Your Ultimate Destination for Alpine Adventures!</p>
+                            <p>Embark on an exhilarating journey through the snowy peaks with ZettySki, 
+                                your premier ski rental shop for an unforgettable winter experience!</p>                        
+                            <p>At ZettySki, we pride ourselves on providing top-notch equipment and 
+                                personalized service to ensure you make the most of your time on the slopes. 
+                                Whether you're a seasoned pro or a first-time skier, 
+                                we've got the perfect gear to suit every skill level. </p>                         
+                            
+                        <div class="welcome-form">
+                       
+                            <h3>Why choose ZettySki?</h3>
+                                <div>
+                                    <p><u><b>Extensive Range</b></u>: 
+                                        <details> Dive into our extensive selection of high-quality skis, 
+                                        snowboards, and winter gear. 
+                                        We stock the latest models from top brands to guarantee a thrilling and 
+                                        safe adventure.
+                                        </details>
+                                    </p>
+                                </div>
+                                
+                                <div>
+                                    <p> <u><b>Expert Guidance</b></u>: 
+                                        <details> Knowledgeable staff is passionate about winter 
+                                        sports and is here to guide you in choosing the right equipment. 
+                                        From selecting the ideal ski length to recommending the best gear 
+                                        for the local terrain, we've got you covered.
+                                        </details> 
+                                    </p>
+                        </div>
+
+                        <div>
+                            <p><u><b>Convenient Location</b></u>: 
+                                <details>Find us conveniently located at 155 Snow Street, 
+                                nestled in the heart of the winter wonderland. 
+                                Our proximity to the best slopes ensures you spend 
+                                more time enjoying the mountains and less time traveling.
+                                </details>
+                            </p>  
+                        </div>
+                        
+                        <div>
+                            <p><u><b>Exclusive Offers</b></u>: 
+                                <details>Enjoy exclusive discounts and special 
+                                offers when you choose ZettySki. We believe in making adventure 
+                                accessible to everyone, and our competitive prices reflect that commitment.
+                                </details>
+                            </p>
+                        </div> 
+
+                        <div>
+                            <p><u><b>Customer Satisfaction</b></u>: 
+                                <details>Your satisfaction is our priority. 
+                                    Experience the ZettySki difference with hassle-free rentals, 
+                                    expert assistance, and a commitment to making your winter 
+                                    getaway truly unforgettable.
+                                
+                                </p>
+                                <p>Gear up for an amazing winter season with ZettySki! 
+                                    Visit us today to discover the joy of gliding down the slopes in style. 
+                                    Your alpine adventure begins here!
+                                </details>
+                            </p>
+
+                        </div>
+ 
+
+                        
+                    </div>
+                    <p>See you on the powder!</p>
+                    <p>ZettySki Team</p>  
+
+                </section>   
+                
+                
+
+                <!-- Contact Us -->
+                <section id="contactSection" class="hide">
+                    
+                    <div class="aboutUs">
+                    <h2>Contact Us</h2>   
+                    
+                        <div>
+                            <p>Have any questions or inquiries? 
+                                Feel free to get in touch with us!</p>
+            
+                            <form>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                                
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                                
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                                
+                                <button type="submit">Send Message</button>
+                            </form>
+                        </div>
+
+                        <div class="pricing-form">
+                            <div>
+                            
+                                <figure>
+                                    <img src="oldman.jpg" alt="Trulli">
+                                    <figcaption>Our Founder</figcaption>
+                                </figure>
+                            </div>
+
+                            <div>
+                                <figure>
+                                    <img src="skilift.jpg" alt="Trulli">
+                                    <figcaption>The Ski lift</figcaption>
+                                </figure>
+                            </div>
+                            
+                            <div>
+                                <figure>
+                                    <img src="oldwoman.jpg" alt="Trulli">
+                                    <figcaption>Our Founder</figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            
+
+
+                <!-- About us -->
+                <section id="aboutSection" class="hide">
+                    
+                    <div class="aboutUs">
+                        <h2>About Us</h2> 
+                        
+                        <div>
+                            <h3> A Century of Alpine Excellence</h3>
+                            <details>
+                                <p>
+                                    Welcome to ZettySki, where the love for winter sports 
+                                    meets a legacy that spans a century! 
+                                    Established in 1923 by the visionary adventurer 
+                                    Erastus Bingham, ZettySki has been at the forefront 
+                                    of providing unparalleled skiing experiences for 
+                                    enthusiasts around the world.
+                                </p>
+                            </details>
+                        </div>
+                        <div>
+                            <h3>Our Founder's Unforgettable Journey: Erastus Bingham</h3>
+                            <details>
+                                <p>
+                                    In the early 1920s, the adventurous spirit of Erastus Bingham 
+                                    led him to the pristine slopes of the Swiss Alps. Drawn by 
+                                    the allure of the majestic peaks and the thrill of gliding 
+                                    through powdery snow, Erastus knew he had discovered a passion 
+                                    that would change his life and the lives of countless others.
+                                </p>
+                                <p>
+                                    Erastus Bingham, with a heart full of determination and 
+                                    a mind brimming with innovative ideas, founded ZettySki 
+                                    on the principles of quality, safety, and an unwavering 
+                                    commitment to the joy of skiing. His dream was to share 
+                                    the magic of winter sports with the world, and thus, 
+                                    the legacy of ZettySki was born.
+                                </p>
+                            </details>                        
+                        </div>
+
+                        <div>
+                            <h3>ZettySki Today</h3>
+                            <details>
+                                <p>
+                                    Fast forward to the present day, and ZettySki stands as 
+                                    a symbol of excellence in the skiing community. Our 
+                                    commitment to Erastus Bingham's vision remains unwavering. 
+                                    We continue to provide top-notch ski equipment, expert 
+                                    guidance, and a passion for winter adventures that transcends 
+                                    generations.
+                                </p>
+                                <p>
+                                    At ZettySki, we take pride in being more than just a ski 
+                                    rental company; we are a community of winter enthusiasts 
+                                    united by the thrill of the slopes. Our 100 years of 
+                                    experience have allowed us to curate a selection of the 
+                                    finest skis and snowboarding gear, ensuring that each 
+                                    moment on the snow is nothing short of extraordinary.
+                                </p>
+                            </details>                            
+                        </div>
+                        <div>
+
+                            <h3>Join the ZettySki Legacy</h3>
+                            <details>
+                                <p>
+                                    As we celebrate our centennial year, we invite you to join 
+                                    us in the next chapter of the ZettySki legacy. Whether you 
+                                    are a seasoned pro or a first-time adventurer, 
+                                    ZettySki is your gateway to the ultimate alpine experience.
+                                </p>
+                                <p>
+                                    Here's to the next hundred years of carving memories, 
+                                    forging friendships, and embracing the sheer joy of the slopes. 
+                                    Welcome to ZettySki - where the adventure never ends! 
+                                </p>
+                            </details>                            
+                        </div>
+                        
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fbqHK8i-HdA?si=c9yh7xOd9SLRjUQf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        
+
+                    </div>
+
+                </section>
+                
+
+
+                <!-- Pricing -->
+                <section id="pricingSection" class="hide">
+
+                    <div class="pricing">
+                        <h2>Pricing</h2>
+
+                        <div class="pricing-form">
+                            <div>
+                                <img src="season rentals.jpg" alt="skiers riding a lift">
+                                <p>Lift Passes: $100</p>
+                            </div>
+                            <div>
+                                <img src="kidsski.jpg" alt="skiers riding a lift">
+                                <p>Kids Ski Rental: $5 per hour</p>
+
+                            </div>
+                            <div>
+                                <img src="snowb.jpg" alt="skiers riding a lift">
+                                <p>Snowboard Rental: $10 per hour</p>
+
+                            </div>
+                            <div>
+                                <img src="couplesskigear.jpg" alt="skiers riding a lift">
+                                <p>Ski Rental: $10 per hour</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </main>
+        
+            
+            <footer class="content-footer">
+                <P>
+                    Tanner Bingham
+                </P>
+            </footer>
+
+        </div>
+    
+    </body>
+</html>

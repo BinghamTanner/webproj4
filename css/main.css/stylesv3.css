@@ -1,0 +1,344 @@
+body{
+    background-image: url("northernlights.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgb(254, 254, 254), -2px -2px 4px rgb(254, 254, 254);
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+
+p{
+    background-color: rgba(125, 125, 124, 0.19); /* Highlight color */
+    padding: 0 4px; /* Horizontal padding */
+    border-radius: 5px;
+}
+
+/* header section */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header input{
+    justify-content: flex-end;
+}
+header img {
+    max-width: 20vw;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* menu section */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+
+}
+
+nav button {
+    align-items: center;
+    flex-direction: row;
+    height: 0;
+    width: 100%;
+    flex: 1;  
+    border-radius: 10px;
+    
+}
+
+nav button span {
+    display: flex;
+    justify-content: center;
+    transform: rotate(270deg);
+
+
+}
+
+/* main section */
+
+
+section div {
+    background: rgba(240, 82, 82, 0.429);
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px; 
+
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.welcome {
+    box-shadow: 0px 0px 0px, 0px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 226, 226, 0.053);
+    border-radius: 15px;
+    
+}
+
+.contactUS {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 226, 226, 0.415);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+    border-radius: 15px;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 226, 226, 0.415);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+    border-radius: 15px;
+
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 226, 226, 0.415);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+    border-radius: 15px;
+
+}
+
+.welcome-form {
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 226, 226, 0.113);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+    border-radius: 15px;
+}
+
+.pricing-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(250, 226, 226, 0.415);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+    border-radius: 15px;
+}
+
+
+
+
+
+/* main about us video */
+.video-container {
+    position: relative;
+    padding-bottom: 50%;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  
+  .video-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+
+/* grid layout */
+
+.content{
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: auto auto 60px;
+
+}
+
+.content-header {
+    grid-column-start: span 2;
+}
+.content-menu {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+}
+.content-main {
+    grid-column-start: 2;
+}
+.content-footer {
+    grid-row-start: 3;
+    grid-column-start: span 2;
+}
+
+
+
+
+
+
+
+
+/* hide and show main */
+
+
+.hide{
+    display:none;
+}
+
+.show{
+
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* toggle switch */
+
+header label{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    background: #ebebeb;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(225, 225, 225, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+    clip-path: polygon(26% 9%, 58% 40%, 99% 31%, 58% 48%, 24% 16%, 0 16%);
+}
+
+
+header label:after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(180deg,rgb(182, 155, 98), rgb(243, 234, 163), rgb(182, 155, 98));
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+header input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + label {
+    background: #242424;
+}
+
+input:checked + label:after {
+    left: 100%;
+    transform: translate(-100%);
+    background: linear-gradient(180deg,rgb(182, 155, 98), rgb(243, 234, 163), rgb(182, 155, 98));
+}
+label:active:after{
+    width: 60%;
+}
+
+
+
+
+img {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+    section div {
+        background: rgba(250, 226, 226, 0.703);
+        width: 80%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+        padding: 4px;
+        margin: 5px;
+        border-radius: 15px;
+        
+    }
+
+    .pricing-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(250, 226, 226, 0.415);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+        border-radius: 15px;
+    
+    }
+    
+    .welcome-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(250, 226, 226, 0.415);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.426), 0px 0px 10px rgba(0, 0, 0, 0.426);
+        border-radius: 15px;
+    
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 425px){
+    
+    nav {
+        gap: 0px;
+    }
+    
+    .video-container {
+        padding-bottom: 75%; 
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
